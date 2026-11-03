@@ -137,7 +137,6 @@ ul li a.active::after {
     }
 
     .hero h1 {
-        color: #088178;
         font-size: 20px;
     }
 
@@ -222,32 +221,31 @@ ul li a.active::after {
     border-radius: 10px;
 }
 
+.features img {
+    max-width: 100%;
+}
+
 /* #################### media query mobile ######################### */
 
 @media(max-width:349px) {
     .features {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-
+        gridtemplate-columns: repeat(1, 1fr);
+        padding: 0 10px;
     }
 }
 
 @media(min-width:350px) and (max-width:709px) {
     .features {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        padding: 0 20px;
 
     }
 }
 
 @media(min-width:710px) {
     .features {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-
+        padding: 0 80px;
     }
 }
 
@@ -400,9 +398,8 @@ ul li a.active::after {
 .two-banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
-    margin: 30px;
-    padding: 15px 70px;
+    gap: 10px;
+    margin: 20px 80px;
 }
 
 .two-banner .deals {
@@ -475,11 +472,26 @@ ul li a.active::after {
 }
 
 /* ############# media query two banner small devices ################## */
-@media(max-width:1319px) {
+@media(max-width:600px) {
     .two-banner {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+    }
 
+    .two-banner .deals {
+        height: 30vh;
+    }
+
+    .two-banner .Collection {
+        height: 30vh;
+
+    }
+}
+
+@media(min-width:601px)and (max-width:800px) {
+    .two-banner {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 80px;
     }
 }
 
@@ -497,7 +509,7 @@ ul li a.active::after {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding-top: 30px;
+    padding: 0 80px;
 }
 
 .new-features-p .new-products .new-card {
@@ -556,22 +568,22 @@ ul li a.active::after {
 /* ############### media query mobile ####################### */
 @media(max-width:639px) {
     .new-features-p .new-products {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
     }
 }
 
 @media(min-width:640px) and (max-width:909px) {
     .new-features-p .new-products {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
     }
 }
 
 @media(min-width:910px) and (max-width:1159px) {
     .new-features-p .new-products {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        padding: 0 80px;
     }
 }
 
@@ -583,7 +595,7 @@ ul li a.active::after {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin: 0 100px;
+    padding: 0 80px;
 
 
 }
@@ -652,16 +664,15 @@ ul li a.active::after {
 /* ################ media query mobile ############# */
 @media(max-width:477px) {
     .three-banner {
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 15px;
+        padding: 0 20px;
     }
 }
 
 @media(min-width:478px) and (max-width:1231px) {
     .three-banner {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
     }
 }
 
@@ -777,36 +788,37 @@ footer .applcation .down .app,
 footer .applcation .down .play {
     border: 1px solid black;
 }
-.copy{
+
+.copy {
     text-align: center;
 }
 
 /* ############# media query mobile #################### */
-@media(max-width:466px){
-    footer{
-        grid-template-columns: repeat(1,1fr);
+@media(max-width:466px) {
+    footer {
+        grid-template-columns: repeat(1, 1fr);
 
     }
 
     footer .applcation .down {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
-@media(min-width:467px) and (max-width:596px){
+@media(min-width:467px) and (max-width:596px) {
 
-    footer{
-                grid-template-columns: repeat(2,1fr);
+    footer {
+        grid-template-columns: repeat(2, 1fr);
 
     }
 }
 
 
-@media(min-width:597px) and (max-width:1025px){
+@media(min-width:597px) and (max-width:1025px) {
 
-    footer{
-                grid-template-columns: repeat(3,1fr);
+    footer {
+        grid-template-columns: repeat(3, 1fr);
 
     }
 }
