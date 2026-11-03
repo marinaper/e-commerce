@@ -400,6 +400,7 @@ ul li a.active::after {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin: 20px 80px;
+    padding: 0 28px;
 }
 
 .two-banner .deals {
